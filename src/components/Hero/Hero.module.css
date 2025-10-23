@@ -1,0 +1,68 @@
+.hero {
+  padding: 4rem 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  align-items: center;
+  gap: 2rem;
+}
+
+.name {
+  color: var(--accent);
+}
+
+.lead {
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.ctas {
+  margin-top: 1.25rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #001;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.ghost {
+  color: var(--text);
+  opacity: 0.85;
+}
+
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .imageBox {
+    margin-top: 2rem;
+  }
+}
